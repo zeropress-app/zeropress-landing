@@ -83,5 +83,5 @@ If you'd like to be involved, follow the repo and watch releases.
 ## 📧 Contact
 
 For collaboration, business inquiries or early access:
-**team@zeropress.org**
+**admin@zeropress.org**
 
