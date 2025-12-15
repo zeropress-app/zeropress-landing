@@ -89,6 +89,20 @@ If you'd like to be involved, follow the repo and watch releases.
 
 ---
 
+## ⚠️ Project Status: Alpha
+
+ZeroPress is currently in **alpha**.
+
+- Core architecture and APIs are still evolving
+- Breaking changes may occur without notice
+- Documentation and tooling are incomplete
+
+If you are interested in the project direction or design discussions, please see:
+- **CONTRIBUTING.md** — how to get involved at this stage
+- **GOVERNANCE.md** — how decisions are made
+
+---
+
 ## 📧 Contact
 
 For collaboration, business inquiries or early access:
