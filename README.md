@@ -63,6 +63,15 @@ We are rapidly building the core platform and welcoming early adopters and contr
 
 ---
 
+## Why Apache 2.0?
+
+ZeroPress is licensed under Apache 2.0 to give developers and organizations
+the freedom to use, modify, and deploy it on their own infrastructure without legal friction.
+This choice aligns with ZeroPress’s self-hosted, Cloudflare-native architecture
+and ensures long-term sustainability for both the community and future commercial offerings.
+
+---
+
 ## 🌐 Official Links
 
 - Landing Page: **https://zeropress.app**
