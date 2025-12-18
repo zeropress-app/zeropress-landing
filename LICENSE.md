@@ -38,7 +38,7 @@ ZeroPress may offer, now or in the future:
 These services are **not included** under the Apache 2.0 license and may be governed by separate commercial terms.
 
 For commercial inquiries, contact:
-**admin@zeropress.org**
+**hello@zeropress.org**
 
 ---
 

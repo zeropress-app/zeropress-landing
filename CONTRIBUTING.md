@@ -106,7 +106,7 @@ Harassment, abuse, or hostile behavior will not be tolerated.
 
 For questions about contributing or project direction:
 
-📧 **admin@zeropress.org**
+**hello@zeropress.org**
 
 ---
 

@@ -60,7 +60,7 @@ The following uses are **not permitted under any circumstances**:
 
 For trademark permissions or inquiries, please contact:
 
-➡️ **admin@zeropress.org**
+**hello@zeropress.org**
 
 ---
 

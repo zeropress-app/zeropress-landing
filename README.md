@@ -106,5 +106,5 @@ If you are interested in the project direction or design discussions, please see
 ## 📧 Contact
 
 For collaboration, business inquiries or early access:
-**admin@zeropress.org**
+**hello@zeropress.org**
 
