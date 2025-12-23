@@ -132,6 +132,68 @@ Instead of optimizing for developer convenience alone, ZeroPress optimizes for:
 - operational clarity
 - content survivability
 
+
+---
+
+## 🔒 Backup & Fault Tolerance
+
+ZeroPress is designed around a **reproducible publishing model**, not a traditional backup-and-restore CMS model.
+
+### What is backed up
+
+*   **D1 (source of truth)**  
+    All original content, metadata, revisions, and publishing state live in D1.
+*   **Templates & build logic (source-controlled)**  
+    Rendering templates and build pipelines are versioned in Git.
+
+These components together fully describe the system state and are sufficient to **reproduce all published pages**.
+
+### What is _not_ backed up
+
+*   **R2 (published HTML artifacts)**  
+    Objects stored in R2 are build outputs, not primary data.  
+    They are intentionally treated as disposable and replaceable.
+
+### Failure model
+
+| Component loss | Impact | Recovery |
+| --- | --- | --- |
+| D1 | Critical | Restore from backup |
+| Templates / build logic | Critical | Restore from source control |
+| R2 | Non-critical | Re-publish (rebuild) |
+
+> In ZeroPress, losing R2 is not a disaster — it is a rebuild event.
+
+---
+
+## ♻️ Why ZeroPress Is Recoverable by Design
+
+Traditional CMS platforms treat the database as both **content storage** and **delivery source**.  
+ZeroPress intentionally separates these responsibilities.
+
+### Design principles
+
+*   **Single source of truth**  
+    D1 stores canonical content and publishing intent.
+*   **Deterministic publishing**  
+    Published pages are deterministic outputs of:
+    ```
+    content (D1) + templates + build logic
+    ```
+*   **Artifact-first delivery**  
+    End users never read from D1. They consume prebuilt artifacts from R2 or Pages.
+
+### What this enables
+
+*   Loss of published files does not require data recovery
+*   Entire sites can be regenerated from source at any time
+*   Template changes are applied via re-publishing, not migrations
+*   Infrastructure failures degrade into rebuild operations, not outages
+
+ZeroPress is therefore **recoverable by design**, not by operational discipline.
+
+> If you can rebuild it, you don’t need to restore it.
+
 ---
 
 ## 📍 Project Status
