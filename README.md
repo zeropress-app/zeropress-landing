@@ -89,20 +89,20 @@ Cloudflare Pages (User-facing delivery)
 
 ---
 
-## 🧩 Client-side JavaScript Policy
+## 🛠 Enhancement Policy
 
-ZeroPress enforces a **strict hydration boundary**:
+ZeroPress pages may include optional enhancements — but these must **never regenerate content** or depend on runtime data for core HTML. They exist solely as client-side decorations or interactive helpers. (See ADR-0006)
 
-**Allowed**
-- Search UI
-- Comments
+### Allowed
+- Syntax highlighting
+- Image lightbox enhancements
+- Copy code buttons
 - Theme toggles
-- Minor UI enhancements
 
-**Forbidden**
-- Client-side rendering of content
-- SPA routing
-- Re-fetching content for display
+### Not Allowed
+- Client-side content rendering
+- SPA navigation
+- Re-fetching or rehydrating core content
 
 > User pages must remain readable as documents, not applications.
 
@@ -112,10 +112,9 @@ ZeroPress enforces a **strict hydration boundary**:
 
 ## 🔍 Search
 
-- Search is implemented via **Cloudflare AutoRAG**
-- R2 files are periodically crawled and indexed
-- Search runs through Workers
-- Search failure never affects page availability
+ZeroPress supports **AI-powered search powered by Cloudflare AutoRAG**.  
+R2 files are periodically crawled and indexed,  
+but **search is a non-critical enhancement only** — it does not affect availability of static pages. (See ADR-0004)
 
 Search is a **feature**, not a dependency.
 
@@ -146,12 +145,21 @@ ZeroPress is currently in **Alpha**.
 Architectural decisions are documented in:
 - `ARCHITECTURE.md`
 - `docs/adr/`
+- ADR-0001: Static Publish for User Pages  
+- ADR-0002: Not a Headless CMS  
+- ADR-0003: R2 File Layout  
+- ADR-0004: AutoRAG Search Architecture  
+- ADR-0005: Client-side Hydration Boundary  
+- ADR-0006: Content Enhancement Policy
 
 ---
 
 ## 📜 License
 
 ZeroPress is licensed under the **Apache License 2.0**.
+Apache 2.0 ensures that both individuals and organizations can adopt,
+modify, and sustain ZeroPress without legal barriers — aligning with our
+commitment to long-lived, framework-independent publishing.
 
 This allows:
 - Self-hosting
