@@ -6,7 +6,7 @@ Accepted
 
 ## Context
 
-ZeroPress is a file-centric publishing system where HTML is the primary artifact and the single source of truth for user-facing content. Previous ADRs establish strict constraints:
+ZeroPress is a file-centric publishing system where HTML is the primary delivery artifact and the canonical representation of published content. Previous ADRs establish strict constraints:
 
 * Content is published as complete HTML documents (ADR-0001)
 * ZeroPress is not a Headless CMS and does not rely on runtime APIs to render content (ADR-0002)

@@ -62,7 +62,7 @@ Canonical structure:
 /public/posts/{slug}/meta.json    # Auxiliary structured data
 ```
 
-* `index.html` is the **source of truth**
+* `index.html` acts as a deterministic renderer of content derived from the source of truth.
 * `meta.json` is used for:
 
   * AI search (AutoRAG)

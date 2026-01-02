@@ -47,7 +47,7 @@ In Headless CMS architectures, content existence is coupled to API availability.
 In ZeroPress:
 
 - Published content exists as **files** (HTML, JSON, XML)
-- These files are the **source of truth** for user-facing pages
+- These files are the authoritative delivery format for user-facing pages.
 - APIs are not required for content access
 
 This guarantees content survivability regardless of backend runtime availability.
